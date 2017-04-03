@@ -1,5 +1,6 @@
 module GameMap(
-  generateMap
+  generateMap,
+  findTile
 ) where
 
 data Tile = Tile {
