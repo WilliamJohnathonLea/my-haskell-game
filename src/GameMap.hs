@@ -12,7 +12,6 @@ generateMap w h = [Tile x y | x <- [1..w], y <- [1..h]]
 
 findTile :: Int -> Int -> [Tile] -> Maybe Tile
 findTile _ _ [] = Nothing
-findTile x y (t:ts) =
-  if (xPoint t) == x && (yPoint t) == y
-    then Just t
-  else findTile x y ts
+findTile x y (t:ts)
+  | (xPoint t) == x && (yPoint t) == y = Just t
+  | otherwise = findTile x y ts
