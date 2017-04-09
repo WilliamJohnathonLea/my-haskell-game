@@ -1,6 +1,8 @@
 module Main where
 
+import Game
 import Character
+import GameMap
 
 main :: IO ()
 main = do

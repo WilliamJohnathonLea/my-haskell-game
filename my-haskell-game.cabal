@@ -2,12 +2,12 @@ name:                my-haskell-game
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/my-haskell-game#readme
+homepage:            https://github.com/WilliamJohnathonLea/my-haskell-game#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
+author:              William Lea
 maintainer:          example@example.com
-copyright:           2017 Author name here
+copyright:           2017 William Lea
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
@@ -15,7 +15,7 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Character
+  exposed-modules:     Game, Character, GameMap
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
 
@@ -38,4 +38,4 @@ test-suite my-haskell-game-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/my-haskell-game
+  location: https://github.com/WilliamJohnathonLea/my-haskell-game
